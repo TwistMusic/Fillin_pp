@@ -1,16 +1,16 @@
 import os
 import datetime
  
-testpath = input('Папка ')
+testpath = input('Folder')
  
 if os.path.exists(testpath):
     if os.path.isfile(testpath):
-        print('ФАЙЛ')
-        print('Размер:',os.path.getsize(testpath)//1024,'Кб')
-        print('Дата последнего изменения:',\
+        print('File')
+        print('size:',os.path.getsize(testpath)//1024,'Кб')
+        print('Date:',\
               datetime.datetime.fromtimestamp(int(os.path.getmtime(testpath))))
     elif os.path.isdir(testpath):
-        print('КАТАЛОГ')
-        print('Список объектов в нем: ',os.listdir(testpath))
+        print('Folder')
+        print('File's count: ',os.listdir(testpath))
 else:
-    print('Объект не найден')
+    print('File don't found')
