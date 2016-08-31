@@ -1,7 +1,7 @@
 import os
 import datetime
  
-testpath = input('Введите адрес: ')
+testpath = input('Папка ')
  
 if os.path.exists(testpath):
     if os.path.isfile(testpath):
