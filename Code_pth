@@ -4,7 +4,7 @@ import datetime
 testpath = input('Folder')
  
 if os.path.exists(testpath):
-    if os.path.isfile(testpath):
+    if os.path.isdir(testpath):
         print('File')
         print('size:',os.path.getsize(testpath)//1024,'Кб')
         print('Date:',\
