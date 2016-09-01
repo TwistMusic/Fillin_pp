@@ -1,7 +1,7 @@
 import os
 import datetime
  
-testpath = input('Folder')
+testpath = 
  
 if os.path.isabs(testpath):
     if os.path.isdir(testpath):
